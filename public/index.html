@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YoursFinanceAdvisor AI - Smart Financial Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>YoursFinanceAdvisor</h1>
+        <p class="subtitle">Your Highly Personalized Intelligent Financial Assistant</p>
+     <a href="#">
+    <img src="logo(1).jpg" alt="Productlogo" id="logoBlack">
+</a>
+    </header>
+
+    <div class="card">
+        <form id="finance-form">
+            <div class="form-group">
+                <label for="lang-pref">Preferred Language / भाषा का चयन</label>
+                <select id="lang-pref">
+                    <option value="en">English (Conversational)</option>
+                    <option value="hi">Hindi / Hinglish (हिंदी रोमन)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="user-type">Select Your Profile Sector</label>
+                <select id="user-type">
+                    <option value="student">Student (छात्र)</option>
+                    <option value="corporate">Corporate Private Employee (निजी कर्मचारी)</option>
+                    <option value="govt">Government Salaried Officer (सरकारी कर्मचारी)</option>
+                    <option value="self_employed">Farmer / Mason / Self-Employed (किसान/कारीगर)</option>
+                    <option value="business">Well-to-do Businessman (व्यवसायी)</option>
+                </select>
+            </div>
+
+            <div id="dynamic-inputs"></div>
+
+            <div class="form-group">
+                <label for="special-issue">Explain Your Specific Target Goal / Financial Pressure Point</label>
+                <textarea id="special-issue" rows="4" placeholder="e.g., Planning a mountain trip with friends in 3 months but parents' contribution falls short. Need a roadmap to cut snack costs and find extra micro-earnings..."></textarea>
+            </div>
+
+            <button type="submit" id="submit-btn">Generate My Plan</button>
+        </form>
+    </div>
+
+    <div id="output-card" class="card hidden">
+        <h2 id="out-header">Your Financial Coach Blueprint</h2>
+        
+        <div class="grid-3">
+            <div class="metric-box needs-box">
+                <span id="label-needs">Essentials (Needs)</span>
+                <h2 id="out-needs">₹0</h2>
+            </div>
+            <div class="metric-box wants-box">
+                <span id="label-wants">Lifestyle (Wants)</span>
+                <h2 id="out-wants">₹0</h2>
+            </div>
+            <div class="metric-box savings-box">
+                <span id="label-savings">Future (Savings)</span>
+                <h2 id="out-savings">₹0</h2>
+            </div>
+        </div>
+
+        <hr class="divider">
+        
+        <h2 id="coaching-title">🎯 True AI Personalized Analysis</h2>
+        <div id="loading-spinner" class="spinner hidden"></div>
+        <div id="coaching-content" class="coaching-output"></div>
+    </div>
+
+   <footer class="app-footer">
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h3>Get to Know Us</h3>
+                <ul>
+                    <li><a href="about-info.pdf" target="_blank">About Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Connect with Us</h3>
+                <ul>
+                    <li><a href="#" target="_blank">LinkedIn</a></li>
+                    <li><a href="#" target="_blank">Instagram</a></li>
+                    <li><a href="#" target="_blank">Twitter</a></li>
+                    <li><a href="#">Email Support</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-brand-section">
+            <div class="footer-line"></div>
+           <a href="#">
+    <img src="logoFinal.jpg" alt="Productlogo" id="logoBlack">
+</a>
+            <p>© 2026 AI-powered YoursFinanceAdvisor. Built for Next-Gen Financial Literacy.</p>
+            <p class="footer-subtext">Powered by Gemini Cloud Architecture • Secure Multi-Sector Advisory Framework</p>
+        </div>
+    </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

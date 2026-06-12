@@ -1,0 +1,32 @@
+{
+  "name": "yoursfinanceadvisor",
+  "version": "1.0.0",
+  "description": "AI-powered finance advisor platform",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhaveshstd44/YoursFinanceAdvisor.git"
+  },
+  "keywords": [
+    "finance",
+    "advisor",
+    "gemini",
+    "ai"
+  ],
+  "author": "Bhavesh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bhaveshstd44/YoursFinanceAdvisor/issues"
+  },
+  "homepage": "https://github.com/bhaveshstd44/YoursFinanceAdvisor#readme",
+  "dependencies": {
+    "@google/genai": "^2.8.0",
+    "dotenv": "^16.6.1",
+    "express": "^4.22.2"
+  }
+}
